@@ -1,5 +1,5 @@
 ## -*- docker-image-name: "armbuild/ocs-example" -*-
-FROM armbuild/ubuntu-debootstrap:trusty
+FROM armbuild/ocs-distrib-ubuntu:trusty
 MAINTAINER Online Labs <opensource@ocs.online.net>
 
 # Prepare rootfs for image-builder
@@ -12,7 +12,6 @@ RUN apt-get -q update && \
 
 # Patch rootfs
 ADD ./patches/ /
-
 
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/builder-leave
