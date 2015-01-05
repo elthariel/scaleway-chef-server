@@ -22,4 +22,4 @@ Build and write the image to /dev/nbd1
 
     $ make install
 
-Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
+Full list of commands available at: [online-labs/image-tools](https://github.com/online-labs/image-tools/tree/master#commands)
