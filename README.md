@@ -18,7 +18,8 @@ We use the Docker's building system and convert it at the end to a disk image th
 Install
 -------
 
-    # build and write the image to /dev/nbd1
+Build and write the image to /dev/nbd1
+
     $ make install
 
 Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
