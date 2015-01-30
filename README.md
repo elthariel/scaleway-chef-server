@@ -1,4 +1,4 @@
-Hello-World image on Online Labs
+Hello-World image on Online Labs [![Build Status](https://travis-ci.org/online-labs/image-helloworld.svg?branch=master)](https://travis-ci.org/online-labs/image-helloworld)
 ================================
 
 Scripts to build the Hello-World image on Online Labs
