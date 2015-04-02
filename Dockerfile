@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "armbuild/ocs-example" -*-
 FROM armbuild/ocs-distrib-ubuntu:trusty
-MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
