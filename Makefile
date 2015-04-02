@@ -1,5 +1,5 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-example
+NAME =			scw-example
 VERSION =		1.2.3
 VERSION_ALIASES =	1.2 1 latest
 TITLE =			Example Image
