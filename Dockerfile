@@ -1,5 +1,3 @@
-## -*- docker-image-name: "armbuild/scw-example" -*-
-
 # Inherit from the Ubuntu Trusty image by Scaleway.
 #   This image contains some Scaleway specific scripts
 #   See https://github.com/scaleway/image-ubuntu/blob/master/14.04/Dockerfile
