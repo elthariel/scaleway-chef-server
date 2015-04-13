@@ -1,9 +1,14 @@
 ## -*- docker-image-name: "armbuild/scw-example" -*-
+
+# Inherit from the Ubuntu Trusty image by Scaleway.
+#   This image contains some Scaleway specific scripts
+#   See https://github.com/scaleway/image-ubuntu/blob/master/14.04/Dockerfile
 FROM armbuild/scw-distrib-ubuntu:trusty
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
-# Prepare rootfs for image-builder
+# Prepare rootfs for image-builder.
+#   This script prevent aptitude to run services when installed
 RUN /usr/local/sbin/builder-enter
 
 
@@ -13,9 +18,10 @@ RUN apt-get -q update && \
     apt-get install -y -qq cowsay
 
 
-# Patch rootfs
-ADD ./patches/ /
+# Add local files from the patches directory
+COPY ./patches/ /
 
 
-# Clean rootfs from image-builder
+# Clean rootfs from image-builder.
+#   Revert the builder-enter script
 RUN /usr/local/sbin/builder-leave
