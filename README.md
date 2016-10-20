@@ -1,12 +1,8 @@
-# Hello-World image on Scaleway
+# Chef-server image on Scaleway
 
-[![Build Status](https://travis-ci.org/scaleway/image-helloworld.svg?branch=master)](https://travis-ci.org/scaleway/image-helloworld)
-
-Scripts to build the **Hello-World** image on Scaleway.
+Scripts to build the **Chef-server** image on Scaleway.
 
 This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
-
-See the [Building images on Scaleway with Docker](http://www.slideshare.net/manfredtouron/while42-paris13-scaleway) presentation on Slideshare.
 
 
 ---
@@ -31,7 +27,7 @@ $ make install
 
 ```bash
 # Clone the hello world docker-based app on an armhf server with Docker
-git clone https://github.com/scaleway/image-helloworld.git
+git clone https://github.com/elthariel/scaleway-cher-server.git
 
 # Build and run the image in Docker (for testing)
 make shell
@@ -42,9 +38,3 @@ make publish_on_s3 S3_URL=s3://my-bucket/my-subdir/
 # push the image on docker registry
 make release DOCKER_NAMESPACE=myusername
 ```
-
-Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
-
----
-
-A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)

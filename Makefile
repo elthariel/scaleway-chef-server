@@ -1,14 +1,14 @@
-NAME =			helloworld
-VERSION =		1.2.3
-VERSION_ALIASES =	1.2 1 latest
-TITLE =			Example Image
-DESCRIPTION =		An image with cowsay
-SOURCE_URL =		https://github.com/scaleway/image-helloworld
-VENDOR_URL =		http://hello.world/
+NAME =			chef-server
+VERSION =		12.9.1
+VERSION_ALIASES =	12.9.1 12 latest
+TITLE =			Chef Server
+DESCRIPTION =		An image with chef-server installed and ready to be used
+SOURCE_URL =		https://github.com/elthariel/scaleway-chef-server
+VENDOR_URL =		http://chef.io
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable
-IMAGE_NAME =		Hello World (v1.2 BETA)
+IMAGE_NAME =		Chef Server 12.9.1
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
