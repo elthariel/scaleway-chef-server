@@ -12,7 +12,7 @@ RUN /usr/local/sbin/builder-enter
 # Install packages
 RUN apt-get -q update && \
     apt-get -y -qq upgrade && \
-    wget -q 'https://github.com/elthariel/chef-server/releases/download/v12.5.0-arm-alpha/chef-server-core_12.9.1.20161020161349-1_armhf.deb' -o /tmp/chef-server-core_12.9.1.deb && \
+    wget -q 'https://github.com/elthariel/chef-server/releases/download/v12.5.0-arm-alpha/chef-server-core_12.9.1.20161020161349-1_armhf.deb' -O /tmp/chef-server-core_12.9.1.deb && \
     dpkg -i /tmp/chef-server-core_12.9.1.deb
 
 # Add local files from the patches directory
