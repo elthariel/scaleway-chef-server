@@ -6,6 +6,7 @@ DESCRIPTION =		An image with chef-server installed and ready to be used
 SOURCE_URL =		https://github.com/elthariel/scaleway-chef-server
 VENDOR_URL =		http://chef.io
 
+DEFAULT_IMAGE_ARCH =	armhf
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable
 IMAGE_NAME =		Chef Server 12.9.1

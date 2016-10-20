@@ -1,7 +1,15 @@
 # Inherit from the Ubuntu Trusty image by Scaleway.
 #   This image contains some Scaleway specific scripts
 #   See https://github.com/scaleway/image-ubuntu/blob/master/14.04/Dockerfile
-FROM scaleway/ubuntu:trusty
+
+FROM scaleway/ubuntu:armhf-xenial
+# following 'FROM' lines are used dynamically thanks do the image-builder
+# which dynamically update the Dockerfile if needed.
+#
+# Those are not supported yet, but could be as there are official
+# package for them
+#FROM scaleway/ubuntu:amd64-xenial       # arch=amd64
+#FROM scaleway/ubuntu:i386-xenial        # arch=i386
 MAINTAINER Julien 'Lta BALET' <contact@lta.io> (@find_lta)
 
 
